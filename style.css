@@ -27,6 +27,9 @@ img {
 .section-title {
   text-align: center;
   margin-bottom: 80px;
+  background-color: orangered;
+  width: 100%;
+  color: white;
 }
 .section-title h2 {
   text-transform: capitalize;
@@ -36,7 +39,7 @@ img {
   padding-bottom: 20px;
   margin-bottom: 12px;
 }
-.section-title h2:before {
+/*.section-title h2:before {
   content: '';
   position: absolute;
   width: 60px;
@@ -45,7 +48,7 @@ img {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
+}*/
 
 .menus {
   display: flex;
@@ -85,12 +88,12 @@ img {
   border-radius: 50%;
   max-width: 100px;
   border: 1px dashed #ddd;
-  padding: 3px;
+  padding: 5px;
   margin-right: 15px;
   transition: .3s;
 }  
 .single-menu:hover img{
-transform: rotate(360deg);
+transform: rotate(180deg);
 }
 .single-menu .menu-content h5 {
   text-transform: capitalize;

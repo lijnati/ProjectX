@@ -1,2 +1,2 @@
-let message = 'Welcome to our Digital Menu';
-alert(message);
+//let message = 'Welcome to our Digital Menu';
+//alert(message);
