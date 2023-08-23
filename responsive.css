@@ -17,8 +17,15 @@
 }
 
 @media only screen and (max-width:767px) {
+  body{
+    background: linear-gradient(to bottom, #e74c3c, #c0392b);
+    width: 280px;
+  }
   .main {
     width: 280px;
+    background: linear-gradient(to bottom, #e74c3c, #c0392b);
+
+
   }
   .menu-column{
     width: 100%;

@@ -22,14 +22,15 @@ img {
 }
 .main {
   width: 1170px;
-  margin: 100px;
+  margin: 80px;
+  padding: 40px;
+  background: linear-gradient(to bottom, #e74c3c, #c0392b);
+  color: #fff;
 }
 .section-title {
   text-align: center;
   margin-bottom: 80px;
-  background-color: orangered;
   width: 100%;
-  color: white;
 }
 .section-title h2 {
   text-transform: capitalize;
@@ -65,8 +66,10 @@ img {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 20px;
+  margin-top: 30px;
   position: relative;
   padding-bottom: 10px;
+  color:navy;
 }
 
 .menu-column h3::before {
@@ -93,7 +96,7 @@ img {
   transition: .3s;
 }  
 .single-menu:hover img{
-transform: rotate(180deg);
+transform: rotate(360deg);
 }
 .single-menu .menu-content h5 {
   text-transform: capitalize;
@@ -104,11 +107,12 @@ transform: rotate(180deg);
   margin-bottom: 10px;
 }
 .single-menu .menu-content h5 span {
-  color: tomato;
+  color: black;
   float:right;
-  margin-left: 35px;
+  margin-left: 20px;
   font-weight: 600;
   font-style: italic;
+  
 }
 
 footer {
