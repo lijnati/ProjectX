@@ -123,3 +123,152 @@ footer {
   font-size: 13px;
   line-height: 20px;
 }
+
+/* Girum CSS Navigation  
+ 
+.menu-navigation {
+  background: #ff3300;
+ 
+}
+
+.menu-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+.menu-navigation a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #f4d800;
+}
+
+.menu-navigation a:hover {
+  color: #fffefe;
+  border-bottom: 2px solid rgb(230, 222, 222);
+}
+
+
+ */
+
+ .menu-navigation {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  position: relative;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:before {
+  transform: translateY(-10px);
+}
+
+.menu-icon:after {
+  transform: translateY(10px);
+}
+
+.menu-icon:hover {
+  background-color: #555;
+}
+
+.menu-icon.open {
+  background-color: transparent;
+}
+
+.menu-icon.open:before {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.menu-icon.open:after {
+  transform: translateY(0) rotate(45deg);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+.menu a:hover {
+  color:  #0097a7;
+}
+
+@media (max-width: 768px) {
+  .menu-navigation {
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.open {
+    display: block;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+/*Back to Top Button */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
